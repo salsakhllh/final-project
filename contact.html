@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  	<meta name="author" content="Salsa">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+            <header>
+                    <div class="container">
+                      <marquee>Assalamu'alaikum</marquee>
+                      <h2 class="logo"></h2>
+                
+                      <nav>
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="Photos.html">Photos</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </header>
+                
+    <section id="newsletter">
+      <div class="container">
+        <h2>Bagaimana sudah punya pilihan ? </h2>
+        <h2>langsung aja chat kami di form dibawah ini</h2>
+        <form action="https://formspree.io/kholilah740@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="isi">
+          <input type="email"  name="email" placeholder="email">
+          <input type="submit" value="Send">
+        </form>
+      
+      </div>
+    </section>   
+
+     <!-- Slideshow container -->
+          
+     <div class="w3-content w3-display-container">
+          
+        <div class="w3-display-container mySlides">
+          <img src="img/b1.jpg">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+          </div>
+        </div>
+        
+        <div class="w3-display-container mySlides">
+          <img src="img/b2.jpg">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+          </div>
+        </div>
+        
+        <div class="w3-display-container mySlides">
+          <img src="img/b3.jpg">
+          <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+              <img src="img/b4.jpg">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+              </div>
+            </div>
+        
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+        
+        </div>
+                <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+      
+      <!-- Footer -->
+    <footer>
+        <p>-Tiada hari tanpa usaha dan berdoa-</p>
+        <p>-Salsa Kholilah-</p>
+      </footer>
+
+      
+        </body>
+        </html>
+    
